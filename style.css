@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-image: url('./assets/sound-bars.jpg');
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  padding: 1em 0.4em;
+  text-align: center;
+  margin: 0 7em 0;
+  flex-basis: 50%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section.about-project {
+  padding: 1em 0.4em;
+  flex-basis: 50%;
+  height: 30vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  text-align: center;
+}
+
+h2 {
+  padding: auto;
+}
+
+p {
+  padding: 0px 0.4em 0px;
+}
+
+article.creators {
+  /* background: yellow; */
+}
+
+.creators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: 30vh;
+  /* align-content: center; */
+}
+
+@media (max-width: 500px) {
+  body {
+    color: blue;
+  }
+}
