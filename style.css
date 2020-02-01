@@ -6,36 +6,32 @@ body,
 html {
   height: 100%;
   margin: 0px;
+  background-color: black;
 }
 
-ul {
-  list-style-type: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+h1 {
+  text-align:Center;
+
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  margin:0;
+justify-self: center;
+padding: 140px 0;
+text-align: center;
+color:white;
 }
 
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: pink;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
 .hero-section {
+  position: absolute;
+  top: 0;
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
-    url('./assets/sound-bars.jpg');
+    url('./assets/IMG_0087.jpeg');
 
   /* Set a specific height */
   height: 50%;
@@ -49,35 +45,35 @@ li a {
 
 h2 {
   padding: auto;
+  color: white;
 }
 
 p {
   padding: 0px 0.4em 0px;
+  color:white;
 }
 
 .container {
   padding: 1em 0.4em;
   text-align: center;
-  margin: 0 7em 0;
   flex-basis: 50%;
-  max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+height: auto;
+
+  min-height: 300px;
 }
 
 section.about-project {
   padding: 1em 0.4em;
   flex-basis: 50%;
-  height: 30vh;
+  height: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: center;
   background-color: lightgrey;
+
 }
 
-/* article.creators {
-  background: yellow;
-} */
+
 
 article.creators {
   display: grid;
@@ -87,6 +83,7 @@ article.creators {
 
   /* align-content: center; */
 }
+
 
 div.member-1 {
   background-color: lightgray;
@@ -107,5 +104,23 @@ div.member-4 {
 @media (max-width: 500px) {
   body {
     color: blue;
+  }
+
+  article.creators {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: 30vh;
+  
+  }
+
+  section.about-project {
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin: 0 7em 0;
   }
 }
