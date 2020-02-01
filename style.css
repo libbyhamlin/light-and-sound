@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+h1 {
+  text-align:Center;
+
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  margin:0;
+justify-self: center;
+padding: 140px 0;
+text-align: center;
+color:white;
+}
+
+
+.hero-section {
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.308),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url('./assets/IMG_0087-darken.jpg');
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h2 {
+  padding: auto;
+  color: white;
+}
+
+p {
+  padding: 0px 0.4em 0px;
+  color:white;
+}
+
+.container {
+  padding: 1em 0.4em;
+  text-align: center;
+  flex-basis: 50%;
+height: auto;
+
+  min-height: 300px;
+}
+
+section.about-project {
+  padding: 1em 0.4em;
+  flex-basis: 50%;
+  height: auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  text-align: center;
+  background-color: lightgrey;
+
+}
+
+
+
+article.creators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: 30vh;
+
+  /* align-content: center; */
+}
+
+
+div.member-1 {
+  background-color: lightgray;
+}
+
+div.member-2 {
+  background-color: lightgray;
+}
+
+div.member-3 {
+  background-color: lightgray;
+}
+
+div.member-4 {
+  background-color: lightgray;
+}
+
+@media (max-width: 500px) {
+  body {
+    color: blue;
+  }
+
+  article.creators {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: 30vh;
+  
+  }
+
+  section.about-project {
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin: 0 7em 0;
+  }
+}
