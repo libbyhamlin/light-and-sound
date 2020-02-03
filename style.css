@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+a{
+  color: lightblue
+}
 body,
 html {
   height: 100%;
@@ -22,7 +25,7 @@ h1 {
   font-size: 60px;
   margin:0;
 justify-self: center;
-padding: 140px 0;
+padding: 70px 0;
 text-align: center;
 color:white;
 }
@@ -37,7 +40,9 @@ color:white;
       rgba(117, 19, 93, 0.73)
     ),
     url('./assets/IMG_0087-darken.jpg');
-  height:300px;;
+  height:300px;
+
+
 
 
   /* Position and center the image to scale nicely on all screens */
@@ -85,9 +90,7 @@ section.about-project {
 
 
 @media (max-width: 500px) {
-  body {
-    color: blue;
-  }
+ 
 
   article.creators {
     display: grid;
